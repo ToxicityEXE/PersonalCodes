@@ -1,7 +1,6 @@
 #pragma once
 
-void OrdenarIntArray(int nums[]) {
-	int arrayLength = (sizeof(nums) / sizeof(*nums)) - 1;
+void OrdenarIntArray(int nums[], int arrayLength) {
 	int menorNum;
 	int mayorNum;
 	for (int k = 0; k <= arrayLength - 1; k++) {		    //loopear todos los elemenos del array "nums" index - 1 para balancear la suma en el segundo for loop
