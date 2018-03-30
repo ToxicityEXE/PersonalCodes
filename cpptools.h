@@ -9,9 +9,8 @@ void OrdenarIntArray(int nums[], int arrayLength) {
 			mayorNum = nums[i];	    //el mayor numero sera el index i
 			nums[i] = menorNum;	    //Replace values
 			nums[i + 1] = mayorNum;
-			for(int x = 0; x <= arrayLength - 1; x++){//Ultimo loop para ver si sigue desordenado, si sigue desordenado reseta los loops
+			for(int x = 0; x <= arrayLength - 1; x++){//Ultimo loop para ver si sigue desordenado, si sigue desordenado reseta el loops
 				if(nums[x] > nums[x + 1]){
-					k = 0;
 					i = 0;
 				}
 			}
